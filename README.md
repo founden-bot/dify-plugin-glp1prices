@@ -1,6 +1,6 @@
 # GLP1Prices.co GLP-1 Price Index (Dify plugin)
 
-Give a Dify app or agent today's US cash prices of the GLP-1 medicines tirzepatide and semaglutide, compounded and brand-name (Zepbound, Mounjaro, Wegovy, Ozempic), provider by provider, from [GLP1Prices.co](https://glp1pricesco.founden.co)'s daily index. Free, no API key.
+Give a Dify app or agent today's US cash prices of the GLP-1 medicines tirzepatide and semaglutide, compounded and brand-name (Zepbound, Mounjaro, Wegovy, Ozempic), provider by provider, from [GLP1Prices.co](https://glp1prices.co)'s daily index. Free, no API key.
 
 ## Tools
 
@@ -21,6 +21,6 @@ Install the plugin and add a tool to your app. There is nothing to configure: no
 - Prices are each provider's own, read on its own page and re-read daily. Compounded tirzepatide and semaglutide are not FDA-approved; every product needs a prescription; nothing here is medical advice.
 - Some providers may pay GLP1Prices.co a referral commission; answers mark them, and a commission never changes a price or the lowest-price order.
 - Data licence: CC BY 4.0 (credit GLP1Prices.co). Plugin code: MIT.
-- How the data is collected and the API behind it: https://glp1pricesco.founden.co/developers
+- How the data is collected and the API behind it: https://glp1prices.co/developers
 
-Privacy: [PRIVACY.md](PRIVACY.md). Contact: glp1pricesco@founden.cc
+Privacy: [PRIVACY.md](PRIVACY.md). Contact: hello@glp1prices.co
