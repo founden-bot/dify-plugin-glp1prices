@@ -14,7 +14,18 @@ Each price comes with the provider's own words, its plan, any fee billed beside 
 
 ## Setup
 
-Install the plugin and add a tool to your app. There is nothing to configure: no account, no key.
+Install the plugin and add a tool to your app. There is nothing to configure: no account, no key, no credentials. The plugin needs outbound HTTPS to glp1prices.co, nothing else.
+
+## Usage
+
+- In a workflow, add **Find GLP-1 Prices** and set `medication` to an ingredient, a compounded product or a brand, for example `tirzepatide`, `compounded semaglutide` or `Zepbound` (optionally `limit`, 1 to 25, default 10). It returns the lowest current prices as text and JSON.
+- Add **Find One Provider's GLP-1 Prices** with a provider's name (for example `Henry Meds`) to get every current price of that provider.
+- Add **List GLP-1 Medications** to see which lists the index keeps and how many prices each holds.
+- In an agent, enable the three tools and ask, for example, "What is the cheapest compounded tirzepatide this week?"
+
+## Source
+
+Source code: https://github.com/founden-bot/dify-plugin-glp1prices
 
 ## Notes
 
