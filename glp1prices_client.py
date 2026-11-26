@@ -14,8 +14,8 @@ from typing import Any, Mapping
 
 import requests
 
-ENDPOINT = "https://glp1pricesco.founden.co/api/mcp"
-USER_AGENT = "dify-plugin-glp1prices (+https://glp1pricesco.founden.co/developers)"
+ENDPOINT = "https://glp1prices.co/api/mcp"
+USER_AGENT = "dify-plugin-glp1prices (+https://glp1prices.co/developers)"
 TIMEOUT = (5, 30)  # connect, read (seconds)
 MAX_BYTES = 2 * 1024 * 1024
 MAX_TEXT = 120
