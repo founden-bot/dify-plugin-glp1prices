@@ -1,0 +1,13 @@
+identity:
+  name: "list_glp1_medications"
+  author: "founden-bot"
+  label:
+    en_US: "List GLP-1 Medications"
+description:
+  human:
+    en_US: "The price lists the GLP1Prices.co index keeps (compounded tirzepatide and semaglutide, and each brand it prices), with how many current prices each holds."
+  llm: "The price lists the GLP1Prices.co index keeps (compounded tirzepatide and semaglutide, and each brand it prices), with how many ranked prices each has today and its page. Takes no input."
+parameters: []
+extra:
+  python:
+    source: tools/list_glp1_medications.py
