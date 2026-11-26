@@ -1,0 +1,22 @@
+identity:
+  name: "find_provider_glp1_prices"
+  author: "founden-bot"
+  label:
+    en_US: "Find One Provider's GLP-1 Prices"
+description:
+  human:
+    en_US: "Every current tirzepatide and semaglutide price of one US provider (a telehealth clinic, a pharmacy or a maker's own program), lowest cost per 30 days first."
+  llm: "Every current tirzepatide and semaglutide price of one US provider (a telehealth clinic, a pharmacy or a maker's own program) from GLP1Prices.co's daily index, lowest cost per 30 days first; prices that cannot be compared per 30 days follow with the reason. Each row gives the product, the price in the provider's own words, its plan and fees, the day it was read and its source page, with the provider's page on GLP1Prices.co."
+parameters:
+  - name: provider
+    type: string
+    required: true
+    label:
+      en_US: "Provider"
+    human_description:
+      en_US: "The provider's name, e.g. Ro, LillyDirect or Collective."
+    llm_description: "The provider's name, e.g. 'Ro', 'LillyDirect', 'Collective', 'Hims & Hers'."
+    form: llm
+extra:
+  python:
+    source: tools/find_provider_glp1_prices.py
