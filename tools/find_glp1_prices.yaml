@@ -1,0 +1,34 @@
+identity:
+  name: "find_glp1_prices"
+  author: "founden-bot"
+  label:
+    en_US: "Find GLP-1 Prices"
+description:
+  human:
+    en_US: "Today's lowest US cash prices of compounded tirzepatide or semaglutide, or of one brand (Zepbound, Mounjaro, Wegovy, Ozempic), lowest cost per 30 days first, each with the provider's own words, plan, fees, the page it was read on and the day."
+  llm: "Today's lowest US cash prices for tirzepatide or semaglutide from GLP1Prices.co's daily index, lowest cost per 30 days first, in the same order as the GLP1Prices.co page the answer links. Ask for an ingredient ('tirzepatide' gives its compounded list and its brands), a compounded product ('compounded semaglutide') or a brand ('Zepbound', 'Mounjaro', 'Wegovy', 'Ozempic'). Each row gives the provider, the product, the price in the provider's own words, its plan length and any fee billed beside it, the cost per 30 days, the day it was read, the page it was read on, and whether GLP1Prices.co may earn a referral commission on it. Compounded medicines are not FDA-approved; a prescription is required; not medical advice."
+parameters:
+  - name: medication
+    type: string
+    required: true
+    label:
+      en_US: "Medicine or brand"
+    human_description:
+      en_US: "An ingredient, a compounded product or a brand, e.g. tirzepatide, compounded semaglutide, Zepbound."
+    llm_description: "An ingredient, a compounded product or a brand, e.g. 'tirzepatide', 'compounded semaglutide', 'Zepbound', 'Wegovy'."
+    form: llm
+  - name: limit
+    type: number
+    required: false
+    default: 10
+    min: 1
+    max: 25
+    label:
+      en_US: "How many prices"
+    human_description:
+      en_US: "How many prices to return per list (1 to 25, default 10)."
+    llm_description: "How many prices to return per list, 1 to 25. Defaults to 10."
+    form: llm
+extra:
+  python:
+    source: tools/find_glp1_prices.py
