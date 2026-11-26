@@ -1,0 +1,18 @@
+identity:
+  author: "founden-bot"
+  name: "glp1prices"
+  label:
+    en_US: "GLP1Prices.co GLP-1 Price Index"
+  description:
+    en_US: "Today's US cash prices of tirzepatide and semaglutide, compounded and brand-name (Zepbound, Mounjaro, Wegovy, Ozempic), by provider and lowest first, from GLP1Prices.co. No API key needed."
+  icon: "icon.svg"
+  tags:
+    - medical
+    - search
+tools:
+  - tools/find_glp1_prices.yaml
+  - tools/find_provider_glp1_prices.yaml
+  - tools/list_glp1_medications.yaml
+extra:
+  python:
+    source: provider/glp1prices.py
