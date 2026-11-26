@@ -7,7 +7,6 @@ label:
 description:
   en_US: Today's US cash prices of tirzepatide and semaglutide, compounded and brand-name (Zepbound, Mounjaro, Wegovy, Ozempic), by provider and lowest first, from GLP1Prices.co. No API key needed.
 tags:
-  - medical
   - search
 icon: icon.svg
 resource:
